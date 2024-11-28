@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Search with Crunchbase",
+    "version": "1.0",
+    "description": "Search selected text on Google followed by 'crunchbase' when pressing Alt + S.",
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "search_with_crunchbase": {
+        "suggested_key": {
+          "default": "Alt+S"
+        },
+        "description": "Search selected text on Google with 'crunchbase'"
+      }
+    }
+  }
+  
